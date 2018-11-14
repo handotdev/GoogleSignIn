@@ -1,3 +1,7 @@
+gapi.load('auth2', function(){
+          gapi.auth2.init();
+          });
+
 function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
   console.log('ID: ' + profile.getId());
