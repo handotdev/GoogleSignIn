@@ -3,16 +3,10 @@
 <html>
     <head>
     <title>Google Sign In</title>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     </head>
     <meta name="google-signin-client_id" content="	
-197198640930-3i8ddl5s9hprmsr2ag3a5hkghligbb9v.apps.googleusercontent.com">
-
-<body>
-<div class="g-signin2" data-onsuccess="onSignIn"></div>
-    
-<script src="https://apis.google.com/js/platform.js" async defer></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+420921629628-mlueo8kanh2gjj4innrh6ugtupfptlbd.apps.googleusercontent.com">
 <script>
  function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
@@ -22,5 +16,7 @@
   console.log('Email: ' + profile.getEmail());
 }       
 </script>
+<body>
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
 </body>
 </html>
